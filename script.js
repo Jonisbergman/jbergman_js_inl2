@@ -50,8 +50,8 @@ function removeTodo(id, todo) {
     fetch('https://jsonplaceholder.typicode.com/posts/1', {
     
     method: 'DELETE',
-    
-    });
+});
+
 }
 
 const createNewTodo = title => {
