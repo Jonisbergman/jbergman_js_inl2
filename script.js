@@ -45,11 +45,13 @@ const createTodoElement = todo => {
 
 function removeTodo(id, todo) {
     todos = todos.filter (todo => todo.id !== id)
-    // button.parentElement.remove();
-    // listTodos()
-    // DELETE FROM DB
-    // if (???)
+   
     todo.remove()
+    fetch('https://jsonplaceholder.typicode.com/posts/1', {
+    
+    method: 'DELETE',
+    
+    });
 }
 
 const createNewTodo = title => {
